@@ -11,3 +11,9 @@ create table commandes (
     montant decimal(10, 2),
     foreign key (client_id) references clients(id)
 );
+--to create another table--
+create table article (
+    id int primary key auto_increment,
+    nom varchar(100),
+    email varchar(100) unique
+);
